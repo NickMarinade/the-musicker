@@ -6,6 +6,12 @@ router.get('/', (req, res) => {
   res.json({ message: 'hello from API' });
 });
 
+router.use('/albums', require('./albums'));
+router.use('/artists', require('./artists'));
+router.use('/genres', require('./genres'));
+router.use('/media-types', require('./media-types'));
+router.use('/playlists', require('./playlists'));
+router.use('/tracks', require('./tracks'));
 
 
 module.exports = router;
