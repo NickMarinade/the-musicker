@@ -20,6 +20,7 @@ const fetchAlbums = url => {
       }
 
     })
+    .catch(err => console.error(err));
 }
 
 fetchAlbums('/api/albums');
